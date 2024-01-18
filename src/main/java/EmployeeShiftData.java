@@ -1,6 +1,7 @@
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.Objects;
 
 /**
@@ -17,17 +18,21 @@ import java.util.Objects;
  *
  * The overridden equals method ensures equality comparison based on the 'positionId' field.
  * Two instances are considered equal if their 'positionId' values are equal.
+ *
+ * The overridden hashCode method generates a hash code value based on the 'positionId' field.
+ * This ensures proper functioning when instances are used in collections such as Sets and Maps.
  */
 @Builder
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeShiftData {
+public class EmployeeShiftData{
     private String positionId;
     private String employeeName;
     private LocalDateTime time;
     private LocalDateTime timeOut;
+
 
     /**
      * Overrides the default equals method to enable custom equality comparison.
@@ -42,5 +47,16 @@ public class EmployeeShiftData {
         if (o == null || getClass() != o.getClass()) return false;
         EmployeeShiftData employee = (EmployeeShiftData) o;
         return Objects.equals(positionId, employee.positionId);
+    }
+
+    /**
+     * Generates a hash code value for the object.
+     * The hash code is based on the 'positionId' field.
+     *
+     * @return The hash code value for the object.
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(positionId);
     }
 }

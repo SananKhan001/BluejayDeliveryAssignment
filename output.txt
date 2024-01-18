@@ -13,10 +13,7 @@ Employee Name 		 Position ID
 ------------------------------------
 CaMaXaWE, CeghaW		WFS000153
 Xee, XaCar		WFS000200
-Xee, XaCar		WFS000200
-Xee, XaCar		WFS000200
 De Xa Cerda, IgWaciE		WFS000318
-MraW, WiXXiaC Ha		WFS000345
 MraW, WiXXiaC Ha		WFS000345
 CEreira Jr, JEse		WFS000456
 DeXgadiXXE REdarMe, ChrisMiaW S		WFS000523
@@ -27,7 +24,6 @@ HaCiXMEW, DeaWMe DevEW		WFS000536
 Output of STATEMENT-C(Hard Working Employees):
 Employee Name 		 Position ID
 ------------------------------------
-Sparks, KeWWeMh		WFS000101
 Sparks, KeWWeMh		WFS000101
 DeXgadiXXE REdarMe, ChrisMiaW S		WFS000523
 ------------------------------------
