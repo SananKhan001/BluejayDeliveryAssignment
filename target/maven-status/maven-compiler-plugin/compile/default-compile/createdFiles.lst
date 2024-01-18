@@ -1,4 +1,5 @@
+AssignmentSolution.class
 Main.class
-Employee$EmployeeBuilder.class
-Helper.class
-Employee.class
+EmployeeShiftDataLoader.class
+EmployeeShiftData$EmployeeShiftDataBuilder.class
+EmployeeShiftData.class
